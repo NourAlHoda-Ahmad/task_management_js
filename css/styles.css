@@ -13,8 +13,8 @@
 }
 
 body{
-    background-color: var(--light-green);
-    /* background-color: rgb(255, 255, 255); */
+    /* background-color: var(--light-green); */
+    background-color: rgb(161, 140, 156);
 
   
 }
@@ -65,7 +65,7 @@ button{
     padding: 20px 50px;
     background-color: white;
     border: 3px solid var(--light);
-    color: var(--beige);
+    /* color: var(--beige); */
 
 }
 .add-task select,button{
@@ -112,7 +112,7 @@ li button , span{
     width: 30vw;
     display: inline-block;
     word-break: break-all;
-    color: var(--beige);
+    /* color: var(--beige); */
     font-weight: 700;
 
 }
@@ -123,13 +123,21 @@ li button , span{
 
 .priority-btn{
     border-radius: 30px;
-    padding: 5px 15px;
+    padding: 2px 15px;
+    background-color: rgb(197, 196, 196);
 }
 
+.priority-btn.high-priority{
+  
+    background-color: rgb(179, 103, 103);
+    color: white;
+}
+
+
 .delete-btn{
-    background-color: red;
+    background-color: white;
     border: 2px solid red;
-    color: rgb(255, 255, 255);
+    color: red;
     font-weight: 500;
 
    
@@ -137,10 +145,10 @@ li button , span{
 }
 
 .edit-btn{
-    background-color: var(--light-green);
+    background-color: white;
     border: 2px solid var(--light-green);
     color: rgb(17, 95, 17);
-    font-weight: 500;
+    font-weight: 700;
     
 }
 /* List of task end */

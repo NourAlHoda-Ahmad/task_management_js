@@ -18,30 +18,40 @@
     <!-- <h1>Task Management</h1> -->
     <div class="container">
         <h2>Manage your Tasks</h2>
-
+        <!-- <div class="message-alert">
+            test
+        </div> -->
         <!-- Add New Task Input -->
         <div class="add-task">
             <input type="text" name="input-task" placeholder="Enter new Task here">
-            <select name="priority">
+            <select name="priority" id="priority">
                 <option value="high">High</option>
                 <option value="low">Low</option>
             </select>
             <button type="button" class="add-task-btn" id="add-task-btn">Add task</button>
-
+         
         </div>
 
         <div class="all-tasks">
             <ul class="tasks-list">
-                <li>
+                <!-- <li >
+                    <span>STATUS</span>
+                    <span>PRIORITY</span>
+                    <span>TITLE</span>
+                    <span c>DUE DATE</span>
+                    
+
+                </li> -->
+                <li hidden >
                     <button type="button" class="status-button">+</button>
+                    <button type="button " class="priority-btn high-priority">high</button>
                     <span class="task-title">taskfdhhhhfddddddddddddddddddhhhhhhhhhhhfdddddddddddddddhhhhhhhhhhhh1</span>
                     <span class="due-date">10-11-23</span>
-                    <button type="button" class="priority-btn">high</button>
                     <button class="edit-btn">edit</button>
-                    <button class="delete-btn">delete</button>
+                    <button class="delete-btn" id="delete-btn">delete</button>
 
                 </li>
-                <li>
+                <li hidden>
                     <button type="button" class="status-button">+</button>
                     <span class="task-title">task1</span>
                     <span class="due-date">10-11-23</span>
