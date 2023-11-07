@@ -3,10 +3,145 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
     --light-green:#D1E6C8;
-    --beige:#F2C496;
-    --light:#D9D1CA;
+    --beige:#D59E5A;
+    --light:#ECE9EA;
 }
+
+body{
+    background-color: var(--light-green);
+    /* background-color: rgb(255, 255, 255); */
+
+  
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+.container{
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+}
+.all-container h2{
+    color: var(--beige);
+}
+
+
+/* Add Task start */
+
+.add-task{
+    padding: 15px;
+    margin: 20px;
+    
+}
+
+button{
+    width: 80px;
+    cursor: pointer;
+    
+
+}
+
+.add-task input,select,button{
+    border-radius:5px ;
+    margin: 15px;
+
+
+}
+.add-task input{
+    padding: 20px 50px;
+    background-color: white;
+    border: 3px solid var(--light);
+    color: var(--beige);
+
+}
+.add-task select,button{
+    padding: 5px;
+    background-color: var(--light)  ;
+    color: black
+}
+
+.add-task button{
+    background-color: grey;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+/* Add Task end */
+
+/* List of task start */
+ul{
+    list-style-type: none;
+    
+}
+
+li{
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+    padding: 20px;
+  
+
+}
+
+li button , span{
+    margin: 10px;
+}
+
+
+
+.status-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.task-title {
+    width: 30vw;
+    display: inline-block;
+    word-break: break-all;
+    color: var(--beige);
+    font-weight: 700;
+
+}
+
+.due-date{
+    color: rgb(170, 168, 168)
+}
+
+.priority-btn{
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.delete-btn{
+    background-color: red;
+    border: 2px solid red;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+
+   
+
+}
+
+.edit-btn{
+    background-color: var(--light-green);
+    border: 2px solid var(--light-green);
+    color: rgb(17, 95, 17);
+    font-weight: 500;
+    
+}
+/* List of task end */
+

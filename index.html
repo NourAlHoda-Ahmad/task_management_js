@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Task Management</title>
 </head>
+
 <body>
-    
+    <!-- <h1>Task Management</h1> -->
+    <div class="container">
+        <h2>Manage your Tasks</h2>
+
+        <!-- Add New Task Input -->
+        <div class="add-task">
+            <input type="text" name="input-task" placeholder="Enter new Task here">
+            <select name="priority">
+                <option value="high">High</option>
+                <option value="low">Low</option>
+            </select>
+            <button type="button" class="add-task-btn" id="add-task-btn">Add task</button>
+
+        </div>
+
+        <div class="all-tasks">
+            <ul class="tasks-list">
+                <li>
+                    <button type="button" class="status-button">+</button>
+                    <span class="task-title">taskfdhhhhfddddddddddddddddddhhhhhhhhhhhfdddddddddddddddhhhhhhhhhhhh1</span>
+                    <span class="due-date">10-11-23</span>
+                    <button type="button" class="priority-btn">high</button>
+                    <button class="edit-btn">edit</button>
+                    <button class="delete-btn">delete</button>
+
+                </li>
+                <li>
+                    <button type="button" class="status-button">+</button>
+                    <span class="task-title">task1</span>
+                    <span class="due-date">10-11-23</span>
+                    <button type="button" class="priority-btn">high</button>
+                    <button class="edit-btn">edit</button>
+                    <button class="delete-btn">delete</button>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>
