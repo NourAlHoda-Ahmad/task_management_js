@@ -103,7 +103,8 @@ function add_task_fct() {
 
 
     // function to change task status
-    let status_btn=document.getElementById(`status-button-${counter_nb_of_tasks}`)
+    // let status_btn=document.getElementById(`status-button-${counter_nb_of_tasks}`)
+    let status_btn=document.getElementsByClassName('status-button')[task_index]
     console.log(status_btn)
     status_btn.addEventListener('click', function (e) {
         console.log("trying to change status")
