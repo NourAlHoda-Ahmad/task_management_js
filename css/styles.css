@@ -13,8 +13,8 @@
 }
 
 body{
-    background-color: var(--light-green);
-    /* background-color: rgb(36, 36, 36) */
+    /* background-color: var(--light-green); */
+    background-color:#EDD3BE;
 
   
 }
@@ -35,7 +35,7 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       
 }
-.all-container h2{
+ h2{
     color: var(--beige);
 }
 
@@ -112,15 +112,16 @@ li button , span,i{
 .status-button{
    /* border-radius: 20px; */
    height: 50px;
-   border: 2px solid orange;
-    color: orange;
+   border: 2px solid #3E8ACC;
+    color: white;
     font-weight: bold;
+    background-color: #3E8ACC;
 
 }
 .finished-status{
-    border: 2px solid blue;
-    /* background-color: blue; */
-    color: blue;
+    border: 2px solid #7BD500;
+    background-color: #7BD500;
+    color: white;
 
 }
 .task-title {
@@ -139,7 +140,7 @@ li button , span,i{
 .priority-btn{
     border-radius: 30px;
     padding: 2px 15px;
-    background-color: rgb(197, 196, 196);
+    background-color: var(--light)
 }
 
 .priority-btn.high-priority{
