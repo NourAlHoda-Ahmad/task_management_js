@@ -92,9 +92,12 @@ li{
     border-top: 1px solid var(--light);
     border-bottom: 1px solid var(--light);
     padding: 20px;
+
+    
   
 
 }
+
 
 li button , span{
     margin: 10px;
@@ -106,6 +109,8 @@ li button , span{
     width: 30px;
     height: 30px;
     border-radius: 50px;
+    background-color: #ccae88;
+
 }
 
 .task-title {
