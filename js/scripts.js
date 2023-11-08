@@ -7,6 +7,10 @@ let tasks_list = document.getElementsByClassName('tasks-list')[0]
 add_btn.addEventListener('click', add_task_fct);
 let counter_nb_of_tasks= 0
 
+let tasks_list_leng= document.getElementsByClassName('tasks-list').length
+
+console.log("test list lenght")
+console.log( tasks_list_leng)
 // function to add task
 function add_task_fct() {
 
@@ -69,8 +73,13 @@ function add_task_fct() {
 
 
     //function to remove task
-    let delete_btn = document.getElementById(`delete-btn-${counter_nb_of_tasks}`)
-    console.log(delete_btn)
+    // let delete_btn = document.getElementById(`delete-btn-${counter_nb_of_tasks}`)
+    let task_index= counter_nb_of_tasks-1
+    console.log("index",task_index)
+    let delete_btn = document.getElementsByClassName('delete-btn')[task_index]
+    console.log("test",delete_btn)
+    console.log("test id",document.getElementById(`delete-btn-${counter_nb_of_tasks}`))
+
 
     delete_btn.addEventListener('click', function (e) {
         console.log("trying to delete")
@@ -78,8 +87,9 @@ function add_task_fct() {
     })
 
 
-    //function to edit task title
-    let edit_btn = document.getElementById(`edit-btn-${counter_nb_of_tasks}`)
+    // function to edit task title
+    // let edit_btn = document.getElementById(`edit-btn-${counter_nb_of_tasks}`)
+    let edit_btn = document.getElementsByClassName('edit-btn')[task_index]
     let current_due_date = edit_btn.previousElementSibling;
     let current_task_tile = current_due_date.previousElementSibling;
     console.log(current_task_tile)
