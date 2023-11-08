@@ -13,8 +13,8 @@
 }
 
 body{
-    /* background-color: var(--light-green); */
-    background-color: rgb(161, 140, 156);
+    background-color: var(--light-green);
+    /* background-color: rgb(36, 36, 36) */
 
   
 }
@@ -92,6 +92,7 @@ li{
     border-top: 1px solid var(--light);
     border-bottom: 1px solid var(--light);
     padding: 20px;
+    /* background-color: #d8d8d8; */
 
     
   
@@ -99,20 +100,25 @@ li{
 }
 
 
+
 li button , span{
     margin: 10px;
+    text-align: center;
+
 }
 
 
 
 .status-button{
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
+   /* border-radius: 30px; */
+    /* padding: px 20px; */
     background-color: #ccae88;
 
 }
+.finished-status{
+    background-color: #6a9465;
 
+}
 .task-title {
     width: 30vw;
     display: inline-block;

@@ -30,7 +30,8 @@ function add_task_fct() {
 
         let new_task_added = document.createElement('li')
         new_task_added.innerHTML = `
-                    <button type="button" class="status-button"></button>
+        <button type="button" class="status-button" id="status-button-${counter_nb_of_tasks}">Ongoing</button>
+
                     <button type="button" class="priority-btn high-priority" >${input_priority.value}</button>
                     <span class="task-title"> ${input_task.value}</span>
                     <span class="due-date">10-11-23</span>
@@ -51,7 +52,7 @@ function add_task_fct() {
 
         let new_task_added = document.createElement('li')
         new_task_added.innerHTML = `
-                    <button type="button" class="status-button">ongoing</button>
+                    <button type="button" class="status-button" id="status-button-${counter_nb_of_tasks}">Ongoing</button>
                     <button type="button" class="priority-btn">${input_priority.value}</button>
                     <span class="task-title"> ${input_task.value}</span>
                     <span class="due-date">10-11-23</span>
@@ -87,6 +88,25 @@ function add_task_fct() {
         console.log("trying to edit")
         let new_task_title = prompt("Please enter the new task name :")
         current_task_tile.innerHTML=new_task_title
+
+    })
+
+
+    // function to change task status
+    let status_btn=document.getElementById(`status-button-${counter_nb_of_tasks}`)
+    console.log(status_btn)
+    status_btn.addEventListener('click', function (e) {
+        console.log("trying to change status")
+        status_btn.classList.toggle("finished-status")
+        if(status_btn.innerHTML=="Ongoing"){
+            status_btn.innerHTML="Finished"
+
+        }
+        else{
+            status_btn.innerHTML="Ongoing"
+
+        }
+
     })
 }
 
