@@ -34,13 +34,12 @@ function add_task_fct() {
 
         let new_task_added = document.createElement('li')
         new_task_added.innerHTML = `
-        <button type="button" class="status-button" id="status-button-${counter_nb_of_tasks}">Ongoing</button>
-
-                    <button type="button" class="priority-btn high-priority" >${input_priority.value}</button>
+                    <button type="button" class="status-button">Ongoing</button>
                     <span class="task-title"> ${input_task.value}</span>
                     <span class="due-date">10-11-23</span>
-                    <button class="edit-btn" id="edit-btn-${counter_nb_of_tasks}">edit</button>
-                    <button class="delete-btn" id="delete-btn-${counter_nb_of_tasks}">delete</button> `
+                    <button type="button" class="priority-btn high-priority" >${input_priority.value}</button>
+                    <i class="edit-btn fas fa-edit fa-xl"></i>
+                    <i class="delete-btn  fas fa-trash-alt fa-xl" label="delete"></i> `
 
         console.log(tasks_list)
         tasks_list.appendChild(new_task_added)
@@ -56,12 +55,12 @@ function add_task_fct() {
 
         let new_task_added = document.createElement('li')
         new_task_added.innerHTML = `
-                    <button type="button" class="status-button" id="status-button-${counter_nb_of_tasks}">Ongoing</button>
-                    <button type="button" class="priority-btn">${input_priority.value}</button>
+                    <button type="button" class="status-button">Ongoing</button>
                     <span class="task-title"> ${input_task.value}</span>
                     <span class="due-date">10-11-23</span>
-                    <button class="edit-btn" id="edit-btn-${counter_nb_of_tasks}">edit</button>
-                    <button class="delete-btn" id="delete-btn-${counter_nb_of_tasks}">delete</button> `
+                    <button type="button" class="priority-btn">${input_priority.value}</button>
+                    <i class="edit-btn fas fa-edit fa-xl"></i>
+                    <i class="delete-btn fas fa-trash-alt fa-xl" label="delete"></i> `
 
         console.log(tasks_list)
         tasks_list.appendChild(new_task_added)
@@ -90,7 +89,8 @@ function add_task_fct() {
     // function to edit task title
     // let edit_btn = document.getElementById(`edit-btn-${counter_nb_of_tasks}`)
     let edit_btn = document.getElementsByClassName('edit-btn')[task_index]
-    let current_due_date = edit_btn.previousElementSibling;
+    let current_priority = edit_btn.previousElementSibling;
+    let current_due_date = current_priority.previousElementSibling;
     let current_task_tile = current_due_date.previousElementSibling;
     console.log(current_task_tile)
 
