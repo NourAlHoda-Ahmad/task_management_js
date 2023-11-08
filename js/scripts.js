@@ -1,14 +1,11 @@
 let input_task = document.getElementsByName("input-task")[0]
 let input_priority = document.getElementById("priority")
 let add_btn = document.getElementById("add-task-btn");
-
 let tasks_list = document.getElementsByClassName('tasks-list')[0]
 
 
 add_btn.addEventListener('click', add_task_fct);
-
-
-let counter_nb_of_tasks_nb_of_tasks = 0
+let counter_nb_of_tasks= 0
 
 // function to add task
 function add_task_fct() {
@@ -69,7 +66,7 @@ function add_task_fct() {
     input_task.value = ""
 
 
-    
+
     //function to remove task
     let delete_btn = document.getElementById(`delete-btn-${counter_nb_of_tasks}`)
     console.log(delete_btn)
