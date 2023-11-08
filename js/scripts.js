@@ -2,6 +2,7 @@ let input_task = document.getElementsByName("input-task")[0]
 let input_priority = document.getElementById("priority")
 let add_btn = document.getElementById("add-task-btn");
 let tasks_list = document.getElementsByClassName('tasks-list')[0]
+let tasks_list_finished=document.getElementsByClassName('tasks-list')[1]
 
 // let all_tasks=[];
 let ongoing_tasks=[];
@@ -165,10 +166,38 @@ function add_task_fct() {
             status_btn.innerHTML="Ongoing"
 
         }
+       
 
     })
+
+ 
+
+  
 }
 
+
+          //function to display finished tasks
+
+console.log("testtttt",finished_tasks)
+let sort_finished_btn=document.getElementById("sort-finished")
+sort_finished_btn.addEventListener('click',function(){
+    for (let i = 0; i < finished_tasks.length; i++) {
+        console.log(finished_tasks[i]);
+
+  let new_task_added = document.createElement('li')
+  new_task_added.innerHTML = `
+              <button type="button" class="status-button .finished-status">Finished</button>
+              <span class="task-title"> ${finished_tasks[i]}</span>
+              <span class="due-date">10-11-23</span>
+              <button type="button" class="priority-btn high-priority" >${finished_tasks[i]}</button>
+              <i class="edit-btn fas fa-edit fa-xl"></i>
+              <i class="delete-btn  fas fa-trash-alt fa-xl" label="delete"></i> `
+
+  console.log(tasks_list)
+  tasks_list_finished.appendChild(new_task_added)
+    }
+
+})
 
 
 
