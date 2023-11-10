@@ -18,15 +18,16 @@
 </head>
 
 <body>
-    <!-- <h1>Task Management</h1> -->
+    <h1>Task Management</h1>
     <div class="container">
-        <h2>Manage your Tasks</h2>
+        <!-- <h2>Manage your Tasks</h2> -->
         <!-- <div class="message-alert">
             test
         </div> -->
         <!-- Add New Task Input -->
+        <div class="alert-message">Task should not be empty</div>
         <div class="add-task">
-            <input type="text" name="input-task" placeholder="Enter new Task here">
+            <input type="text" name="input-task" class="" placeholder="Enter new Task here">
             <select name="priority" id="priority">
                 <option value="high">High</option>
                 <option value="low">Low</option>
@@ -35,23 +36,39 @@
          
         </div>
 
+        <div>
+            <button type="button" class="sort-all" id="sort-all">show All</button>
+            <button type="button" class="sort-finished" id="sort-finished">show finished</button>
+            <button type="button" class="sort-ongoing" id="sort-ongoing">show ongoing</button>
+
+            <div class="all-tasks">
+                <ul class="tasks-list">
+                </ul>
+    
+            </div>
+        </div>
+
+        
+
         <div class="all-tasks">
             <ul class="tasks-list">
             </ul>
 
         </div>
 
-    <div>
-        <button type="button" class="sort-finished" id="sort-finished">show finished</button>
         <div class="all-tasks">
             <ul class="tasks-list">
             </ul>
 
         </div>
-    </div>
+
+       
+   
 </div>
 
-    <script src="./js/scripts.js"></script>
+    <!-- <script src="./js/scripts.js"></script> -->
+    <!-- <script src="./js/test-script.js"></script> -->
+    <script src="./js/test2-js.js"></script>
 </body>
 
 </html>

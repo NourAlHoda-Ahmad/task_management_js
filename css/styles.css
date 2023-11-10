@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,17 +6,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --light-green:#D1E6C8;
-    --beige:#D59E5A;
-    --light:#ECE9EA;
+:root {
+    --light-green: #D1E6C8;
+    --beige: #D59E5A;
+    --light: #ECE9EA;
 }
 
-body{
+body {
     /* background-color: var(--light-green); */
-    background-color:#EDD3BE;
+    background-color: #EDD3BE;
 
-  
+
 }
 
 h1 {
@@ -24,7 +24,7 @@ h1 {
     padding: 15px;
 }
 
-.container{
+.container {
     width: 80vw;
     margin: auto;
     margin-top: 50px;
@@ -33,48 +33,79 @@ h1 {
     text-align: center;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      
+
 }
- h2{
+
+h2 {
     color: var(--beige);
 }
 
 
 /* Add Task start */
 
-.add-task{
+.add-task {
     padding: 15px;
     margin: 20px;
-    
+
 }
 
-button{
+button {
     width: 80px;
     cursor: pointer;
-    
+
 
 }
 
-.add-task input,select,button{
-    border-radius:5px ;
+.alert-message {
+    display: none;
+    background-color: rgb(173, 124, 124);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.add-task input,
+select,
+button {
+    border-radius: 5px;
     margin: 15px;
 
 
 }
-.add-task input{
+
+
+
+.add-task input {
     padding: 20px 50px;
     background-color: white;
     border: 3px solid var(--light);
     /* color: var(--beige); */
 
 }
-.add-task select,button{
+
+
+
+.add-task .input-warning {
+    background-color: white;
+    border: 5px solid rgb(173, 124, 124);
+
+}
+
+
+
+.add-task select,
+button {
     padding: 5px;
-    background-color: var(--light)  ;
+    background-color: var(--light);
     color: black
 }
 
-.add-task button{
+.add-task button {
     background-color: grey;
     border: 2px solid grey;
     cursor: pointer;
@@ -83,25 +114,27 @@ button{
 /* Add Task end */
 
 /* List of task start */
-ul{
+ul {
     list-style-type: none;
-    
+
 }
 
-li{
+li {
     border-top: 1px solid var(--light);
     border-bottom: 1px solid var(--light);
     padding: 20px;
     /* background-color: #d8d8d8; */
 
-    
-  
+
+
 
 }
 
 
 
-li button , span,i{
+li button,
+span,
+i {
     margin: 20px;
     text-align: center;
 
@@ -109,21 +142,23 @@ li button , span,i{
 
 
 
-.status-button{
-   /* border-radius: 20px; */
-   height: 50px;
-   border: 2px solid #3E8ACC;
+.status-button {
+    /* border-radius: 20px; */
+    height: 50px;
+    border: 2px solid #3E8ACC;
     color: white;
     font-weight: bold;
     background-color: #3E8ACC;
 
 }
-.finished-status{
+
+.finished-status {
     border: 2px solid #7BD500;
     background-color: #7BD500;
     color: white;
 
 }
+
 .task-title {
     width: 30vw;
     display: inline-block;
@@ -133,18 +168,18 @@ li button , span,i{
 
 }
 
-.due-date{
+.due-date {
     color: rgb(170, 168, 168)
 }
 
-.priority-btn{
+.priority-btn {
     border-radius: 30px;
     padding: 2px 15px;
     background-color: var(--light)
 }
 
-.priority-btn.high-priority{
-  
+.priority-btn.high-priority {
+
     background-color: red;
     color: white;
 }
@@ -158,7 +193,7 @@ li button , span,i{
 
 } */
 
-.delete-btn{
+.delete-btn {
     /* color: red; */
     font-weight: bold;
     cursor: pointer;
@@ -172,13 +207,16 @@ li button , span,i{
     
 } */
 
-.edit-btn{
-  
+.edit-btn {
+
     /* color: rgb(15, 147, 15); */
     font-weight: bold;
     cursor: pointer;
-
-    
 }
-/* List of task end */
 
+.hide-ul {
+    display: none;
+}
+
+
+/* List of task end */
