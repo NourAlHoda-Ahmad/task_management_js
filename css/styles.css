@@ -7,22 +7,21 @@
 }
 
 :root {
-    --light-green: #D1E6C8;
+    --light-green: #C3DFB4;
     --beige: #D59E5A;
     --light: #ECE9EA;
 }
 
 body {
-    /* background-color: var(--light-green); */
-    background-color: #EDD3BE;
-
+    background-color: #C3DFB4;
+    background-image: url('../assets/images/bg-image1.jpg');
+    background-size: cover;
 
 }
 
-h1 {
-    text-align: center;
-    padding: 15px;
-}
+
+
+
 
 .container {
     width: 80vw;
@@ -36,36 +35,32 @@ h1 {
 
 }
 
-h2 {
-    color: var(--beige);
+h1 {
+    text-align: center;
+    padding: 15px;
+    color: #2C5177;
 }
 
 
 /* Add Task start */
-
 .add-task {
     padding: 15px;
     margin: 20px;
-
 }
 
-button {
-    width: 80px;
-    cursor: pointer;
 
 
-}
 
 .alert-message {
     display: none;
-    background-color: rgb(173, 124, 124);
+    background-color: red;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     text-align: center;
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    width: 30%;
+    padding: 30px;
 }
 
 
@@ -74,8 +69,7 @@ select,
 button {
     border-radius: 5px;
     margin: 15px;
-
-
+    cursor: pointer;
 }
 
 
@@ -84,14 +78,12 @@ button {
     padding: 20px 50px;
     background-color: white;
     border: 3px solid var(--light);
-    /* color: var(--beige); */
 
 }
 
 
 
 .add-task .input-warning {
-    background-color: white;
     border: 5px solid rgb(173, 124, 124);
 
 }
@@ -102,32 +94,40 @@ button {
 button {
     padding: 5px;
     background-color: var(--light);
-    color: black
+    color: black;
 }
 
 .add-task button {
-    background-color: grey;
-    border: 2px solid grey;
-    cursor: pointer;
+    background-color: #2C5177;
+    border: 2px solid #2C5177;
+    color: white;
 }
+
 
 /* Add Task end */
 
+
+
 /* List of task start */
+
+.sort-btn{
+    padding: 8px 50px;
+    
+}
+
 ul {
     list-style-type: none;
+}
 
+.hide-ul {
+    display: none;
 }
 
 li {
     border-top: 1px solid var(--light);
     border-bottom: 1px solid var(--light);
-    padding: 20px;
-    /* background-color: #d8d8d8; */
-
-
-
-
+    padding: 10px;
+    background-color: #eff0ef;
 }
 
 
@@ -141,9 +141,7 @@ i {
 }
 
 
-
 .status-button {
-    /* border-radius: 20px; */
     height: 50px;
     border: 2px solid #3E8ACC;
     color: white;
@@ -153,23 +151,18 @@ i {
 }
 
 .finished-status {
-    border: 2px solid #7BD500;
-    background-color: #7BD500;
+    border: 2px solid #85eb49;
+    background-color: #85eb49;
     color: white;
 
 }
 
 .task-title {
-    width: 30vw;
+    width: 20vw;
     display: inline-block;
     word-break: break-all;
-    /* color: var(--beige); */
     font-weight: 700;
 
-}
-
-.due-date {
-    color: rgb(170, 168, 168)
 }
 
 .priority-btn {
@@ -185,38 +178,11 @@ i {
 }
 
 
-/* .delete-btn{
-    background-color: white;
-    border: 2px solid red;
-    color: red;
-    font-weight: 500
-
-} */
-
-.delete-btn {
-    /* color: red; */
+.delete-btn, .edit-btn {
     font-weight: bold;
     cursor: pointer;
 }
 
-/* .edit-btn{
-    background-color: white;
-    border: 2px solid var(--light-green);
-    color: rgb(17, 95, 17);
-    font-weight: 700;
-    
-} */
-
-.edit-btn {
-
-    /* color: rgb(15, 147, 15); */
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.hide-ul {
-    display: none;
-}
 
 
 /* List of task end */
