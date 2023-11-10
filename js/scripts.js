@@ -188,14 +188,6 @@ function change_status(task_index, finished_tasks, ongoing_tasks, all_tasks, cur
     console.log("all tasks list : ", all_tasks)
     console.log("finished tasks list : ", finished_tasks)
     console.log("ongoing list : ", ongoing_tasks)
-    for (let i = 0; i < finished_tasks.length; i++) {
-        console.log(finished_tasks)
-        console.log(finished_tasks[i][0])
-        console.log(finished_tasks[i][0].value)
-
-
-    }
-
 
 }
 
@@ -203,9 +195,6 @@ function change_status(task_index, finished_tasks, ongoing_tasks, all_tasks, cur
 
 
 // Event to display all tasks
-console.log("testtttt", ongoing_tasks)
-
-
 let sort_all_btn = document.getElementById("sort-all")
 sort_all_btn.addEventListener('click', function () {
     tasks_list.removeAttribute('class', 'hide-ul')
@@ -217,50 +206,43 @@ sort_all_btn.addEventListener('click', function () {
 
 
 // Event to display finished tasks
-console.log("testtttt", finished_tasks)
-let count_click_finished=0;
+
 
 let sort_finished_btn = document.getElementById("sort-finished")
 sort_finished_btn.addEventListener('click', function () {
-    count_click_finished+=1
-
-
+    
     tasks_list.setAttribute('class', 'hide-ul')
     tasks_list_ongoing.setAttribute('class', 'hide-ul')
     tasks_list_finished.removeAttribute('class', 'hide-ul')
 
-    if(count_click_finished==1){
-        display_tasks(finished_tasks, tasks_list_finished, 'Finished')
+    tasks_list_finished.innerHTML = "";
+    display_tasks(finished_tasks, tasks_list_finished, 'Finished')
 
-    }
 
-});
+
+
+})
 
 
 // Event to display ongoing tasks
-console.log("testtttt", ongoing_tasks)
-let count_click_ongoing=0;
+
 
 let sort_ongoing_btn = document.getElementById("sort-ongoing")
 sort_ongoing_btn.addEventListener('click', function () {
-    count_click_ongoing+=1
 
     tasks_list.setAttribute('class', 'hide-ul')
     tasks_list_finished.setAttribute('class', 'hide-ul')
     tasks_list_ongoing.removeAttribute('class', 'hide-ul')
-    if(count_click_ongoing==1){
-
-        display_tasks(ongoing_tasks, tasks_list_ongoing,'Ongoing')
-    }
 
 
-});
+    tasks_list_ongoing.innerHTML = "";
+    display_tasks(ongoing_tasks, tasks_list_ongoing, 'Ongoing')
+
+})
 
 
 
-//For Finished and Ongoing Taks display
-
-
+//For Finished and Ongoing Tasks display
 //function to display ul
 function display_tasks(array_tasks, ul_task_list, status) {
 
